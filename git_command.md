@@ -131,3 +131,13 @@ $ cat /c/Users/Lenovo_L/.ssh/id_rsa.pub
 
 ````
 
+```
+git 查看配置
+
+$ git config --global --list
+user.name=kookooko
+user.email=wsgdcwfhtwr@outlook.com
+push.default=simple
+credential.helper=wincred
+```
+
