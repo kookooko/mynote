@@ -75,3 +75,19 @@ OK
 
 ```
 
+- #### reids默认数据存在内存，非持久化，修改redis.conf使redis持久化
+
+```
+vim /mydata/redis/conf/redis.conf
+```
+
+- #### redis.conf添加内容
+
+```
+appendonly yes
+```
+
+```
+docker restart redis
+```
+
