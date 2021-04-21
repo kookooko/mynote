@@ -1,5 +1,8 @@
-````
+## 记录我的git初始化流程
 
+### 我的文件目录/mynote
+
+````
 /mynote
 $ git init
 Initialized empty Git repository in E:/mynote/.git/
@@ -52,7 +55,11 @@ user.name=root
 user.email=root@root.com
 push.default=simple
 credential.helper=wincred
+````
 
+- #### 直接使用 git config --global "user.change@change.com" 修改不行，这是我蒙的，以为能修改
+
+```
 /mynote (master)
 $ git config --global "user.change@change.com"
 
@@ -62,6 +69,12 @@ user.name=root
 user.email=root@root.com
 push.default=simple
 credential.helper=wincred
+```
+
+- #### 使用git config --global --replace-all user.name "myemail@xxx.com"修改
+
+```
+
 
 /mynote (master)
 $ git config --global --replace-all user.name "myemail@xxx.com"
@@ -116,11 +129,13 @@ cat: id_rsa.pub: No such file or directory
 
 /mynote (master)
 $ cat /c/Users/myname/.ssh/id_rsa.pub
+```
 
-````
+
+
+### git 查看配置
 
 ```
-git 查看配置
 
 $ git config --global --list
 user.name=myusername
