@@ -51,3 +51,22 @@ https://maven.aliyun.com/mvn/guide
 </mirrors>
 ```
 
+- #### maven编译环境配置
+
+```
+<profiles>
+    <profile>
+          <id>jdk-1.8</id>
+          <activation>
+          <activeByDefault>true</activeByDefault>
+            <jdk>1.8</jdk>
+          </activation>
+          <repositories>
+            <maven.compiler.source>1.8</maven.compiler.source>    
+            <maven.compiler.target>1.8</maven.compiler.target>    
+            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+          </repositories>
+    </profile>
+</profiles>
+```
+
