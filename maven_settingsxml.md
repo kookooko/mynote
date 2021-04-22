@@ -61,11 +61,11 @@ https://maven.aliyun.com/mvn/guide
           <activeByDefault>true</activeByDefault>
             <jdk>1.8</jdk>
           </activation>
-          <repositories>
-            <maven.compiler.source>1.8</maven.compiler.source>    
-            <maven.compiler.target>1.8</maven.compiler.target>    
-            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
-          </repositories>
+      <properties>    
+         <maven.compiler.source>1.8</maven.compiler.source>    
+         <maven.compiler.target>1.8</maven.compiler.target>    
+         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>    
+      </properties>
     </profile>
 </profiles>
 ```

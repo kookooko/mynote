@@ -36,6 +36,15 @@ default-character-set=utf8
 default-character-set=utf8
 ```
 
+- #### 设置mysql容器自启动
+
+```
+[root@centos7 conf]# docker update mysql --restart=always
+mysql
+```
+
+
+
 ## docker启动redis容器流程
 
 ```
@@ -48,6 +57,12 @@ mkdir -p /usr/local/docker/redis/conf
 
 ```
 touch /usr/local/docker/redis/conf/redis.conf
+```
+
+- ### redis.conf内容如下
+
+```
+appendonly yes
 ```
 
 - ### redis-server /etc/redis/redis.conf
@@ -89,5 +104,12 @@ appendonly yes
 
 ```
 docker restart redis
+```
+
+- #### 设置redis自启动
+
+```
+[root@centos7 /]# docker update redis --restart=always
+redis
 ```
 
